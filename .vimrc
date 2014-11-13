@@ -49,7 +49,7 @@ syntax enable
 " theme
 set background=dark
 colorscheme solarized
-set guifont=DejaVu\ Sans\ Mono\ 10
+set guifont=Liberation\ Mono\ for\ Powerline\ 10
 set antialias
 
 " file explorer
@@ -83,3 +83,4 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " tabline
 let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts=1
