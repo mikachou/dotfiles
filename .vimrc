@@ -15,8 +15,12 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
+Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
 
@@ -84,3 +88,9 @@ let g:ctrlp_cmd = 'CtrlP'
 " tabline
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
+
+" C Family autocomplete
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+
+" delete buffer without closing window
+command! BW :bn|:bd#
